@@ -12,6 +12,7 @@ import com.mailservice.services.MailService;
 public class MailController {
 	@Autowired
 	private MailService sendMail;
+	
 	@GetMapping("/sendmail")
 	public String sendMail(){
 		return sendMail.sendMail();
